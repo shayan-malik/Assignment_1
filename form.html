@@ -3,36 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
+    <title>Document</title>
 </head>
 <body>
-    <form>
-        <label for="Username">username:</label>
-        <input type="text" id="Username">       <br><br>
+   <form>
+    <fieldset>
+        <legend>Your details</legend>
 
-        <p>I vote For</p>
-        <label for="Ella Fitzgerald">Ella Fitzgerald</label>
-        <input type="radio" id="Ella Fitzgerald" name="check">   <br>
+        <label for="name">Name</label>
+        <input type="name" id="name">       <br>
 
-        <label for="Herbie Hancock">Herbie Hancock</label>
-        <input type="radio" id="Herbie Hancock" name="check">    <br>
+        <label for="email">Email</label>
+        <input type="email" id="email">
+    </fieldset>
+
+    <fieldset>
+        <legend>Your Review</legend>
+
+        <p> How did you hear about us? 
+            <select>
+            <option value="">Google</option>
+            <option value="">Youtube</option>
+            <option value="">Facebook</option>
+            <option value="">Instagram</option>
+            </select>
+        </p>
+
+        <p> Would you visit again?      <br>
+            <input type="radio" id="yes" name="click">
+            <label for="yes">Yes</label>
+
+            <input type="radio" id="no" name="click">
+            <label for="no">No</label>
+
+            <input type="radio" id="maybe" name="click">
+            <label for="maybe">Maybe</label>
+        </p>
+
+        <p> Comments:       <br>
+            <textarea cols="40" rows="3"></textarea>
+        </p>
+
+        <p> <input type="checkbox" id="check">
+            <label for="check">Sign me up for email updates</label>     <br>
+            <button>Submit review</button>
+
+        </p>
         
-        <label for="John Coltrane">John Coltrane</label>
-        <input type="radio" id="John Coltrane" name="check">     <br>
-
-        <label for="Miles Davis">Miles Davis</label>
-        <input type="radio" id="Miles Davis" name="check">       <br>
-
-        <label for="Thelonius Monk">Thelonius Monk</label>
-        <input type="radio" id="Thelonius Monk" name="check">    <br>   <br>
-
-        <textarea name="" id=""></textarea>
-
         
+    </fieldset>
 
-        
 
-        
-    </form>
+   </form> 
 </body>
 </html>
